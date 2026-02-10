@@ -1,0 +1,503 @@
+java script 
+
+
+A scripting language is a type of programming language designed to automate tasks, often within a specific environment like a web browser, operating system, or software application.
+
+ Unlike compiled languages (like C or Java), scripting languages are typically interpreted line-by-line, making them faster to write, test, and modify
+
+ example - php , python , java script 
+
+
+- What Is ECMAScript?
+ECMAScript is the standardized scripting language specification defined by ECMA-262, maintained by Ecma International. It serves as the core language behind JavaScript, ActionScript, and other implementations.
+
+
+Think of ECMAScript as the blueprint—it defines the syntax, types, statements, keywords, operators, and built-in objects like Array, Object, Function, etc.
+
+
+- javascript 
+
+JavaScript is a high-level, interpreted programming language that powers the interactive behavior of websites and web apps. It’s the engine behind dynamic content, user interactions, and real-time updates in the browser.
+
+
+Originally developed by Brendan Erich in 1995, JavaScript has evolved from a simple scripting tool into a full-fledged ecosystem used for both client-side and server-side development
+
+ run time environment  for java script in browser 
+
+ Node.js is a powerful, open-source runtime environment that lets you run JavaScript outside the browser, primarily on servers. It’s built on Google’s V8 engine, which compiles JavaScript into fast machine code. ==== run time environment 
+
+  Run time environment  for  webpage google, chrome , firebox 
+
+ -webpage console tab explain   = element console network source 
+
+
+ first code 
+============
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+</body>
+</html> 
+
+=========================================
+
+variable 
+var a=10;
+var b=10;
+console.log(a + b);
+
+ let a=10;
+let only use the inside the  block  local variable 
+
+var global  scope can use anywhere  var can change a value
+var a=10;
+a=20 
+print 20 
+ 
+but 
+const can not change a value for entire program, 
+const a= 10 ;
+ a=20 
+throw error  
+
+ var a=10;
+var b=10;
+ var d = "durai";
+
+
+ var c=a+b;
+=================
+// - single line comment 
+/* multiline comment */
+======================
+data types 
+
+ console.log(typeof(10));
+console.log(typeof(apple"));
+console.log(typeof("0"));
+console.log(typeof('a'));
+console.log(typeof(10));
+console.log(typeof(10));
+======================
+data types 
+
+
+number  string boolean undefined   null 
+======================================== 
+ function 
+ function hi(){
+console.log("hello world");
+}
+hi();
+---------------------
+ add two number using function .
+ function add(){
+  var a=10;
+  var b=10;
+  var c=a+b;
+ console.log(c);
+ console.log("addition of two number : "+ c    )
+}
+ add();
+ 
+------------
+ parameters 
+function add (a,b){
+ console.log(a+b); 
+}
+ add(10,20);
+
+function squre  (l,b){
+var c=L*B;
+ console.log( "squre is :"a*b); 
+}
+//var l=10;
+//var b=20;
+ add(2,2);
+----------------------------------- 
+
+ return function - u need to store value in variable 
+-------------------
+
+ function myName(){ // function declaration 
+return "jhon";
+}
+
+ var a=myName(); // save the name use this variable to save 
+console.log(a); // this is print (true or false )
+
+
+
+function add(a,b){ // parameter 
+ return (a+b);
+}
+ var c=add(a,b);
+ add(1,2) // argument 
+console.log(c)
+
+// hosting method you can use function call frist  then declare function 
+
+
+--
+ defalut parameters:
+
+ function greet(name="enter the name in function "){
+ console.log("hi",name)
+}
+
+c.l();// hi enter the name ;
+-----
+recursion function 
+ 
+factrial question 
+
+function fact(n){
+  if(n==1)
+return 1;
+else
+return n*fact(n-1)        (n-1)
+
+}
+
+c.l(5);
+
+/// arrow function 
+ let volume = (l*b*h) => { return l*b*h}
+let volume = (l*b*h) =>  return l*b*h // single line no need {}
+c.l (volume(7,8,9));
+
+ function hi(){
+c.l("hello world");
+}
+
+ let hi = ()=>  hello world
+c.l(hi)
+
+let area = r => 3.14*r*r
+c.l(area(5));
+
+console.clear();
+--------------------------------------
+ conditional statement 
+
+if(condition){
+ console.log("print value");
+}
+else {
+console.log ("do not print value ");
+}
+
+logical or and not && || ! 
+
+== double side is correct checking 
+
+looping or control state ment
+ idea
+for(int=1;int<5;int=int+1 ){
+c.l("int");
+}
+
+syntax 
+for(count=1;count<5;count=count+1){
+ c.l("print");
+}
+  
+
+=======================================================================================================
+ DOM MANIPULATION 
+OPEN CONOLE  
+ show the tree 
+
+h1 id=mes h1
+document.getelementbyid("mes")
+let message  = document.getelementbyid("mes")
+console.log(message)
+
+message.innerHTML= "hello world";
+------------
+
+input type="text" id="input"
+btn id=con  onclick="convert()" convert  btn
+p id=result p 
+  
+
+d.gei("input") // input box 
+d.gei("input").value //'10'
+
+let value =number (d.gei("input").value )
+let result =dei("result ")
+
+function convert(){
+ /// inside all code that will run 
+}
+
+
+
+===============================================================================
+OBJECT  IN JAVASCRIPT :    
+
+LET X={};//decalre
+
+ CONSOLE.LOG(typeof(X))
+ 
+key and value 
+name is key 
+curd.evis value 
+
+ //value 
+
+let car = {
+ name : "curd.ev " ,
+brand :"tata" ,
+driventrain : 'petrol' ,'disel', 'ev' ,
+price : 15;
+}
+give proper value in function   
+c.l car.price
+
+
+name=rajadurai;
+
+let raja = {
+ name1 : student+'name' 
+}
+
+c.l raja.name1
+
+ key allow space but "" need "name1 student"
+
+let raja = {
+ "name1 student" : name + 
+}
+c.l (car["name1 student"])
+
+delete.car.(price)// delete 
+
+add new property use '' quotes only 
+
+car['model year']=2024;//add 
+
+car['price'] =18;
+car.price=18;
+ 
+let car ={ 
+ price: 20;
+ onRoad(){
+   return price*2; //20 // use inside function  
+} ,
+onroad(n){
+return this.price*2; // use current value 
+}
+
+}
+
+c.l (car.onroad(11));//22
+
+c.l('price'in car)// find inside present or not . t or false 
+
+for(key in car) {
+c.l(key)
+}
+
+price 
+onroad
+onRoad
+
+for(key in car) {
+c.l( key '-'user[key])
+}
+price - 20
+return 
+return 
+ ================================================================
+
+let a={
+name: 'goes',
+age : 23;
+
+}
+let b=a;
+console.log(a,b);
+b.age=75
+
+c.l(a,b)
+
+age 75,age 75 
+
+let a={
+name: 'goes',
+age : 23;
+
+}
+let b={};
+b.age=75
+console.log(a,b);
+c.l(a,b)
+
+age=35 age=75
+
+ const a={
+name:'goes',
+age:22
+}
+ b={} //error
+a.age=15; // can change 
+c.l(a)// 15
+
+
+ ==================================================
+
+arrays..
+
+let arrays = new array();
+or let arrays=[];
+let arrays=['carrot','root']
+c.l(typeof(arrays))
+
+  arrays=['carrot','root'];
+
+c,l(arrays[2])// error
+
+c,l(arrays[0]) // true 
+
+let arr=[5 , 'call', true,undefined,function add(a+b) return(a+b),{name:raja,age:22}]
+
+c.l(arr[3]add(2,2));
+
+arr[1]=1;
+
+arr.push('beans');// add last elemet
+arr.unshift('beans');// add in frist elemt 
+arr.shift(); // remove the first
+arr.pop(); // remove the end 
+
+for(arra of arr)
+{
+c.l(arra)
+}
+
+for (let i=0;i<3;i++)
+arr.length;
+
+
+let arr= new array('2','2','2')
+
+let mat=[
+[1,2,3]'
+[4,5,6],
+[7,8,9]
+]
+
+c.l(mat[1][1])
+
+
+
+variable
+keywords 
+operators 
+data types 
+
+condintional statement 
+control statement 
+ arrays 
+objects 
+functions 
+event handling 
+======================
+dom manipulations 
+---------------
+ document object 
+
+ head
+   title 
+ 
+ body
+   h1  
+   p 
+ --------------
+p "id=1"  hello p 
+ document.getelementbyid("1")
+
+var page = document.getelementbyid("1");
+
+c.l(document.getelementbyid("1")) - hello.
+c.l(page.textcontent);
+page.textcontent="change";
+c.l(para)
+
+==> textcontent
+
+------------------------
+
+ event & event handler 
+
+  button  onclick="change()"  hello world button 
+
+var a=document.getelementbyid("1")
+c.l(a.textcontent);
+
+function change (){
+a.textcontent=bye world;
+}
+
+add 2 number 1st inpu 1 , inputc2 btm sum button onclick add two numbers 
+
+input value var a=p.value;
+
+number(p.value)
+
+
+
+bom manupulations 
+ajax 
+api 
+fetch 
+
+oops 
+
+=====================
+react 
+ app installation 
+ create-react-app 
+
+arhitecure 
+component life cycle 
+
+virtual dom
+components 
+props 
+hooks use state ,use effect , use context , custome hooks , 
+routing , use navigate 
+ui design - mui, eact bits , tailwind , bootrap
+
+asios use curd operation 
+local json server 
+
+node  replace express 
+jwt 
+mongoss mangodb curd operation 
+by script - password encryption,decription
+
+ deployment 
+netlify , vercel , render
+
+
+
+
+
+
+
+
+
+
+
+
+

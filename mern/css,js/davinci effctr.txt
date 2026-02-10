@@ -1,0 +1,105 @@
+: -- setup
+from = 0; -- starting value
+to = 123456; -- ending value
+delim = "," -- the text inserted as a thousands separator.
+prefix = "pre " -- text before the number
+postfix = " post" -- text after the number
+-- setup end
+number = from + (to-from)*(time/comp.RenderEnd)
+delimited = (string.format('%d', number)):reverse():gsub("(%d%d%d)","%1" .. delim):gsub(",(%-?)$","%1"):reverse()
+return(prefix .. delimited .. postfix)
+
+
+
+
+
+
+
+
+
+: -- setup
+from = 0; -- starting value
+to = 100; -- ending value
+delim = "," -- the text inserted as a thousands separator.
+prefix = " $ " -- text before the number
+postfix = " M " -- text after the number
+-- setup end
+number = from + (to-from)*(time/comp.RenderEnd)
+delimited = (string.format('%d', number)):reverse():gsub("(%d%d%d)","%1" .. delim):gsub(",(%-?)$","%1"):reverse()
+return(prefix .. delimited .. postfix)
+
+
+
+
+S
+
+
+
+
+
+
+
+
+
+
+
+
+Clean and Minimalist
+
+Vintage and Retro
+
+Modern and Bold
+
+Grunge and Urban
+
+Whimsical and Playful
+
+Professional and Corporate
+
+Artistic and Creative
+
+172
+786
+==========================================================================================================================
+ davinci resolve   wordpress
+Daniel batel        Azharul Rafy 
+guyformflims
+vanakkam nanba          Jim Fahad Digital-project .
+ Jason Yadlovski
+
+- Primal Video – Covers editing strategies, workflow optimization, and how to make your edits more engaging.
+- Cinecom.net – Focuses on creative editing techniques, transitions, and cinematic storytelling.
+- Think Media – While it covers content creation broadly, it has great insights on editing for audience engagement.
+- Daniel Schiffer – A master of cinematic editing, transitions, and storytelling techniques.
+- HillierSmith – Breaks down professional editing techniques used in high-end YouTube videos.
+
+
+Got it! Here are some of the best YouTube channels that focus specifically on DaVinci Resolve tutorials, including editing techniques, special effects, and workflow optimization:
+Top DaVinci Resolve YouTube Channels
+- Casey Faris – One of the best channels for DaVinci Resolve tutorials, covering everything from basic editing to advanced effects.
+- JayAreTV – Focuses on DaVinci Resolve’s Fusion page, VFX, and motion graphics.
+- Billy Rybka – Great for creative transitions, effects, and cinematic editing techniques.
+- Darren Mostyn – A professional colorist who teaches advanced color grading in DaVinci Resolve.
+- VFXstudy – Specializes in Fusion and VFX inside DaVinci Resolve, perfect for special effects.
+
+You can also check out this video guide on the best DaVinci Resolve tutorial channels here.
+Would you like recommendations for specific effects tutorials, such as cinematic transitions or advanced color grading? 🚀
+
+
+
+
+
+https://www.instagram.com/reel/DHcnKCzvldZ/?utm_source=ig_web_copy_link
+
+
+
+
+
+
+
+
+
+i am video editor in lovely minion pre kg Lkg students   play school  . here teach A "Thirsty Crow" story  students are learn  the story form teacher.
+ students  very curious  minions also want to check how crow does this little stone to fill the bot and drink water . 
+ teacher empty  glass taken and drop half of water filled and remaining water students do in drop little stones into the glass and  turned filled  half class of water to full class of water .  this activity i am record  start to end . now i want to edit this video    my boss wanted to  background voice over give me idea to how to edit that video within one min and  voice over also wanted within a min  give me idea for this
+

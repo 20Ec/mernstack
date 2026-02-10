@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handler </title>
+</head>
+<body>
+    <div id="container">
+        <!-- <button type="button" onclick="console.log('hello world')">click me now</button> -->
+        <!-- <button type="button" onclick="on()">click me now</button> -->
+         
+          <button type="button" id="btn">  click me </button>
+    </div> 
+
+      <p id="bt"></p>
+
+      <input type="text" id="myInput">
+     
+    <script>
+    //        function on(){
+    //      console.log('hello world')
+    //   }
+  let btn =document.getElementById("btn");
+//    btn.onclick = function on (){
+//    console.log('hllo world')    }
+//    btn.onclick = null;
+
+ //   addEventListener(event,function)
+     
+   btn.addEventListener('click',function(){
+          let bt=document.getElementById("bt") 
+          bt.innerHTML=' <p> mouse clicked </p>'     
+   })
+
+
+   btn.addEventListener('mouseover',function(){
+     console.log('mouseover')
+   });
+
+    btn.addEventListener('mouseout',function(){ // ()=>{}
+     console.log('mouseout')
+   }); 
+
+   const input = document.getElementById("myInput");
+
+function handleChange() {
+  console.log("Input value changed to:", input.value);
+}
+
+input.addEventListener("change", handleChange);
+
+
+
+   // or 
+     function on (){ // let  on = ()=> {}
+       console.log('hello world')    }
+
+   btn.addEventListener('click',on) // without the () 
+ 
+ 
+    </script>
+    
+</body>
+</html>

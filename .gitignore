@@ -1,2 +1,6 @@
 frontent/node_modules
 backend/node_modules
+mern/express/node_modules
+mern/vite/node_modules
+mern/mongoose/node_modules
+mern/mongoose/sample/node_modules

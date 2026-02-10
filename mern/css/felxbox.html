@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box </title>
+    <!-- <link rel="stylesheet" href="flex.css"> -->
+</head>
+
+<style>
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-wrap:  wrap; */
+         /* align-content: flex-start;  */
+        gap: 10px;
+        width: 80vw;
+        height: 50vh;
+        background-color: rebeccapurple;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100px; 
+        height: 30px;
+        background-color: aqua;
+        gap: 10px;
+    }
+
+    .b1{
+         flex: 3 3 150px;
+        
+    }
+    .b2{
+       flex-shrink: 1;
+    }
+    /* .b3{
+        flex-grow: 3;
+    }
+    .b4{
+        flex-shrink: 1;
+    } */
+</style>
+
+<body>
+
+    <div class="flex">
+        <div class="box b1  ">1</div>
+        <div class="box b2  ">2</div>
+        <!-- <div class="box b3 ">3</div>
+        <div class="box b4  ">4</div>
+        <div class="box b5  ">5</div>
+        <div class="box b6  ">6</div> -->
+
+
+
+</body>
+
+</html>

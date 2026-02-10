@@ -1,0 +1,20 @@
+<p id="demo">hello world</p>
+  <p id="dem"></p>
+
+
+  <input id="valuee"  type="text">
+
+  <button type="submit" onclick="c()" >clicked</button>
+
+  <p id="click"> </p>
+  
+
+  <script>
+    alert("welcome");
+    function c(){
+
+     let b =Number(document.getElementById("valuee").value);
+     let a = document.getElementById("click");
+         a.innerHTML = b+4;
+
+    }

@@ -1,0 +1,12 @@
+node install 
+setup  
+create - react app 
+components creation and exportation 
+component live cycle 
+react architecture 
+eventhandling 
+ui design 
+hooks & props
+routing
+
+

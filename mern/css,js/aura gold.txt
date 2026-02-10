@@ -1,0 +1,293 @@
+html 
+css
+bootrap  
+js 
+
+
+color theory 
+typography 
+fonts
+ui/ux
+
+ES6 
+dom mnipulaation 
+jquery
+
+
+unix commond line 
+
+ node js 
+ expres js 
+ ejs 
+
+
+
+
+git and gitup 
+
+ API 
+json 
+authentication 
+rest Api 
+
+own API  
+get post put patch 
+delete 
+
+blog '
+
+
+
+
+mongoDB 
+
+
+  Athentication  AND SECURITY 
+  CREDENTIAL AND DESSIGNIUNG  SECURE LOGIN 
+
+
+99423 63604
+
+
+
+
+pin corner 
+shape create with pen tool 
+counter 
+color compressor 
+grid foreground 
+3d keyar remove background
+camera shake
+keyframe 
+spine keyframe 
+video Alignment 
+TEXT COLOR GRADIENT 
+ guide => show line  == grid line 
+
+
+
+  border 
+hight width
+text  Alignment  decoration  transform spacing   shadow 
+
+font  wight family size 
+
+a:active hover visited  link
+
+display block, none , hidden 
+
+position  Sticky  absolute  fixed relative 
+
+diplay flex 
+justify content 
+flex direction .
+flex wrap 
+align-content 
+
+
+inside content 
+flex-grow 
+flex-basis
+flex-shink 
+order 
+ display : block ;
+display inline block ;
+
+
+ display grid 
+grid-auto-flow basics 
+grid-template-cluoumns: 1fr 1fr 1fr; i 
+repeat(2,1fr 2fr ) i 
+grid-auto-row : 200px;
+gap 
+grid-cloumn-start 
+grid-cloumn-end same replace grid end 
+
+grid-template-area: "h h h h h h "
+                    "s m m m m m"
+                    "f f f f f f"; 
+
+ inspect layout grid 
+
+ background:
+
+ background image :
+background -size : cover 
+bCKGROUND REPEAT
+BACKGROUND ATTANCHMENT : FIXED , OR SCROOL . 
+ 
+ BACKGROUND : RED NO REPEAR FIXED  COVER ; 
+
+  MEDIA QURIES :
+320 PX - I PHONE ,
+480-PX  ANDRIOD 
+600 PX I PAD  
+801 PX  TABLET 
+1025 px laptop 
+1281 px desktop 
+
+ background :  leaner gradiant blur red ;
+
+
+  float left right both 
+
+ nav bar 
+ li: left 
+ a display block 
+ drop down menu 
+
+ navbar 
+ pagination 
+  
+2d ,3d, animation,transistion 
+responsive website 
+media queries 
+
+ animation {
+transition duration : 3s;
+transform property : background color ;
+transition-timing-function: ease-in; 
+transition-delay: 
+transition: background color 3s  3s ;
+linear ;
+// 1s duration 2nd s delay ;
+
+}
+
+.animation: hover  {
+width : 100;
+transform : rotate 3 deg  ;
+
+
+}
+ here after all are used in transform tag only ;
+transform:
+transform X : 3-deg;
+transform y:   3-deg;
+transform z : 3-deg;
+
+ Scale: 
+ transform: scale (2);
+ double the size 
+ ScaleX
+ScaleY
+ScaleZ
+
+ padding margin  ; 
+ translate 
+ translateX (30px);
+
+ Animation, 
+
+circle {
+ Animation-name : xxxxxxx;
+Animation - duration : 3s;
+ Animation-itretion-counter: 5;
+Animation-fill-mode : forwards;
+Animation-timing function .
+
+
+}
+
+@keyframes circle {
+
+ 50%{
+ background color : red;
+width : 100;
+height :100;
+}
+
+ 100%{
+ background color : red;
+width : 100;
+height :100;
+}
+
+
+
+}
+
+
+
+
+
+
+ String function 
+
+- length() ok
+- charAt() ok
+- substring() ok 
+- concat() ok
+- equals() ok
+- equalsIgnoreCase() ok
+- toUpperCase() ok 
+- toLowerCase() ok 
+- trim() 
+- indexOf()  ok 
+- lastIndexOf() ok 
+- contains() ok 
+- startsWith() ok
+- endsWith() ok 
+- replace() ok
+- replaceAll() ok 
+- isEmpty() ok 
+
+- compareToIgnoreCase() 
+
+- toCharArray()
+compareTo()
+- intern()
+- valueOf()
+- join() 
+ split()
+matches() 
+
+
+
+
+
+
+
+array
+  initial array  
+  list out array --int String 
+  index value 
+ .lenth function 
+  print with index value 
+  use print for loop 
+  scan and print  next and print 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

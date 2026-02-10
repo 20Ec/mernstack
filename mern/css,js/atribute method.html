@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username"
+    style="color: red;font-size: 20px;"
+    >
+ 
+
+    <script>
+    
+
+
+  let inputbox =document.getElementById("username");
+  console.log(inputbox.style.fontSize)
+//   inputbox.style.padding="20px"
+//    inputbox.style.cssText +="width:300px:; height :100px"
+
+  inputbox.attributes
+  console.log(  inputbox.attributes)
+  console.log(inputbox.getAttribute("type"))
+   console.log(inputbox.getAttribute("placeholder"))
+
+   inputbox.setAttribute("class","inpu")
+   console.log(inputbox)
+
+//    inputbox.hasAttribute("id") // check present or not 
+   console.log(inputbox.hasAttribute("class") )
+
+    inputbox.removeAttribute("id")
+    console.log(inputbox )
+    </script> 
+</body>
+</html>

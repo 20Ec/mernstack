@@ -1,0 +1,34 @@
+transition ======================= ok 
+color isolation 
+speedramp  =====================  ok 
+reverse video ========================
+sound design 
+croma key or green screen ===================== ok 
+cimetography 
+motion tracking   
+color correction     ok 
+grading 
+day to night
+masking
+text behind object 
+object removel 
+character intro 
+sky replacement  ===================== 
+clone mens 
+video stablisation
+
+doble vision 
+echo
+screen tracing 
+
+
+ luts 
+https://www.colorgradingcentral.com/free-luts/
+https://www.shutterstock.com/blog/129-free-cinematic-luts
+https://theresolve.store/30-free-cinematicx-luts-for-davinci-resolve/
+https://freshluts.com/
+
+
+
+
+

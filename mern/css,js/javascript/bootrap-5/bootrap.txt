@@ -1,0 +1,118 @@
+ grid system 
+.container .row 
+ - 12 row 
+
+break points 
+
+
+| Breakpoint        | Class Prefix | Applies ≥ width | Example Use            |
+| ----------------- | ------------ | --------------- | ---------------------- |
+| Extra small       | *(none)*     | 0px             | Always (mobile-first)  |
+| Small             | `sm`         | 576px           | Small devices (phones) |
+| Medium            | `md`         | 768px           | Tablets                |
+| Large             | `lg`         | 992px           | Laptops                |
+| Extra large       | `xl`         | 1200px          | Desktops               |
+| Extra extra large | `xxl`        | 1400px          | Very large screens     |
+
+
+
+(xs, sm, md, lg, xl, xxl)
+
+padding margin p-1to5 m-1to5
+
+heading tags :
+
+h1 - h6
+
+text tags :
+
+text-primary , danger , success, info , warning ,secondary(text-primary-emphasis)
+
+background:
+
+bg-primary , danger , success, info , warning ,secondary(bg-primary-subtle)
+
+alignment:
+text-start , end, center  
+
+
+text-uppercase , lowercase,captilize
+
+rounded corner :
+rounded 1-5
+rounded-start  end,top,bottom
+
+fontsize :
+fs-1to5
+diplay-6 to 1
+fw-bolder
+
+border-1 to 5  border-start,end,top,bottom
+
+button 
+
+btn btn-primay btn-md
+
+badges or labels  inside span 
+
+badge bg-danger
+ <h4>Notifications <span class="badge bg-danger">3</span></h4>
+
+
+ display
+ 
+d-flex
+ 
+x-axis
+
+.flex-row
+
+.flex-column
+
+justify-content-start → items left
+
+justify-content-center → center
+
+justify-content-end → right
+
+justify-content-between → space between
+
+justify-content-around → space around
+
+y-axis
+
+align-items-start → top
+
+align-items-center → middle
+
+align-items-end → bottom
+
+
+ tables 
+
+<table class="table table-striped">
+ <tr class="table-primary">
+table-bordered 
+table-hover
+table-dark
+
+
+
+
+margin padding 
+border radius
+flex and grid 
+Navbar – Responsive Menu Bar
+cards
+pages
+Breadcrumbs
+text&fonts 
+img 
+buttons
+tables
+ 
+
+
+
+
+

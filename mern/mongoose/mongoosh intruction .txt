@@ -1,0 +1,50 @@
+npm i init  -y
+npm i mongoose 
+npm i nodemon -D
+
+https://mongoosejs.com/
+
+
+const  mongoose = require('mongoose'); // import mongoose 
+mongoose.connect("mongodb://localhost/testdb")  // connect the db 
+console.log("Connected to MongoDB"); // meesage connected 
+
+
+schema query model 
+
+// sample 
+const blogSchema = new Schema({
+   name : String, 
+   age : Number 
+
+})
+// sample 
+
+mongoose.model('Blog', blogSchema);
+module.exports = mongoose;
+
+
+
+
+async function main() {
+  await mongoose.connect('mongodb://127.0.0.1:27017/test');
+
+  const firstData = new User({
+    name: 'John',
+    age: 30
+  });
+
+//   await firstData.save();
+  console.log('User saved');
+  console.log(firstData);
+}
+
+pic of the week 
+
+
+carousel 
+
+raoiinbow - 1 st page 
+2st rainbow block - 2 pic - 2 layout 
+
+qoutes -

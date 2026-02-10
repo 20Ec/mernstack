@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table - Parent & Child Nodes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .table-container {
+      margin-top: 30px;
+      border: 2px solid #ccc;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .line {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 Multiplication Table Generator</h1>
+
+  <!-- Input field to enter number -->
+  <input type="number" id="numberInput" placeholder="Enter a number" />
+
+  <!-- Button to generate table -->
+  <button id="generateBtn">Generate Table</button>
+
+  <!-- Parent container for all multiplication lines -->
+  <div id="tableContainer" class="table-container"></div>
+
+  <script>
+    // Step 1: Select parent container and button
+    const button = document.getElementById("generateBtn");
+    const container = document.getElementById("tableContainer");
+
+    // Step 2: Add click event listener
+    button.addEventListener("click", function() {
+      // Clear previous table (if any)
+      
+      container.innerHTML = "";
+
+      // Get number from input field
+      const num = document.getElementById("numberInput").value;
+
+      if (!num) {
+        alert("Please enter a number!");
+        return;
+      }
+
+      // Step 3: Create 10 child nodes (lines)
+      for (let i = 1; i <= 10; i++) {
+        // Create a new div (child node)
+        const line = document.createElement("div");
+
+        // Add CSS class to style it
+
+        line.classList.add("line");
+
+        // Set its text content (like "5 × 1 = 5")
+
+        line.textContent = `${num} × ${i} = ${num * i}`;
+
+        // Add this child node to the parent container
+
+        container.appendChild(line);
+      }
+    });
+  </script>
+
+</body>
+</html>

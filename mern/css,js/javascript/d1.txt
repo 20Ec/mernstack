@@ -1,0 +1,86 @@
+ parent and child in html parent body is child 
+
+ inside the body 4 p p tag its are the
+ body is parent and children is p tags but p tags are sibilings next sibiling and previous sibiling mention here in selct p tags 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <p id="demo">hello</p>
+     <p id="demo">world</p>
+     <p id="innertext"></p>
+     <p id="textcontent"></p>
+
+     <input type="text" id="val">
+
+
+     <input type="radio" name="language"  value="js">
+     <input type="radio" name="language"  value="j">
+
+     <h1>1 heading</h1>
+      <h1>1 heading</h1>
+       <h1>1 heading</h1>
+       <h1>1 heading</h1>
+
+       <h1 class="cn">1 heading</h1>
+       <h1 class="cn">1 heading</h1>
+       <h1 class="cn">1 heading</h1>
+
+       <h1 class="cnn">1 heading</h1>
+       <div id="divv">
+       <h1 class="cnn">1 heading</h1>
+       <h1 class="cnn">1 heading</h1>
+       </div>
+       
+      
+     <script>
+
+        let dem =document.getElementById("demo"); // id is unique so return only frist 
+        console.log("dem") // hello
+
+         let innertext =document.getElementById("innertext"); 
+        innertext.innerText="innertext"
+
+        let innercon =document.getElementById("textcontent"); 
+        innercon.textContent="textcontent"
+
+
+         let nam=document.getElementsByName("language") // save as a node file shows length
+        console.log(nam)    
+
+         let ta=document.getElementsByTagName("h1") // save collections of data with length 
+         console.log(ta)
+
+          let cn=document.getElementsByClassName("cn");
+          console.log(cn)
+
+          let con =document.getElementById("divv");
+          let container = con.getElementsByClassName("cnn") // access inside the div 
+          console.log(container)
+
+          let qs=document.querySelector(".cnn") // get elemt in frist class name 
+          console.log(qs) 
+
+          let qsa=document.querySelectorAll(".cnn")// get all element in class name 
+          console.log(qsa)
+
+          let cons =document.getElementById("divv");
+          let containerr = cons.getElementsByClassName("cnn") // access inside the div 
+          console.log(containerr)
+     // use can use in multipe way same to select in css like this
+     // div div p  #idd .classname like this same to css selecters
+
+
+
+     </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,151 @@
+download mangosh
+ extract file 
+ enter bin copy the file path 
+
+computer path 
+computer. properties. advanced system settings . path , new . paste path 
+ 
+open cmd type moongsh -v   
+
+show dbs // shows the all  data 
+
+use school 
+
+db.createCollection("students")
+
+
+
+db.dropDatabase() // delete the database 
+
+;
+ db.students.insertOne({name : "raja" , age : 22})// insert one 
+
+db.students.find() //  finds the data 
+
+db.students.insertMany([{name: "raju ",age : 23 }, { name  : "kaliya " ,age : 22},{name : "dolu ",age : 24}]) \\ array in important  // insert many functions
+
+db.students.insertOne({
+  name: "bheem",
+  age: 5,
+  goodBoy: true,
+  date: new Date(),ds
+  degree: null,
+  skills: ["laddu eating", "fight", "speak"],
+  adress: {
+    doorno: 7,
+    st: "kovil st",
+    city: "erode",
+    pincode: 12345
+  }
+})
+
+
+db.students.insertMany([
+  {
+    name: "bheem",
+    age: 5,
+    goodBoy: true,
+    skills: ["laddu eating", "fight"],
+    city: "erode"
+  },
+  {
+    name: "chutki",
+    age: 6,
+    goodBoy: false,
+    skills: ["gardening", "cooking"],
+    city: "erode"
+  },
+  {
+    name: "raju",
+    age: 7,
+    goodBoy: true,
+    skills: ["math", "drawing"],
+    city: "erode"
+  }
+])
+
+db.students.find().sort({name:1}) acending order 
+db.students.find().sort({name:-1}) decenting order 
+
+
+db.students.find().limit(1) // limit 
+
+db.students.find().sort({age: -1}).limit(1)
+ 
+   {query }, {projection}
+db.students.find({name:"raja"}) // find 
+
+db.students.find({},{name:true}) // single key and value
+
+db.students.find({},{_id:false,name:true})// remove use false  
+
+
+db.students.find({},{_id:false,name:true,age:true}) 
+
+
+db.students.updateOne({name:"bheem"},{$set:{age:99}})
+
+
+db.students.updateOne({_id: ObjectId('68edeb0a8770a7c4911151ff')},{$set:{degree: "yes"}})
+
+db.students.updateOne({_id: ObjectId('68edeb0a8770a7c4911151ff')},{$unset:{degree: ""}})
+
+db.students.updateMany({},{$set : {updateman:"secess"}})
+
+db.students.updateOne({name:"bheem"},{$unset:{goodBoy: ""}})
+
+db.students.updateMany({fullTime : {$exists : false}},{ $set :{fullTime : true }})
+
+db.students.deleteOne({name:"raja"})
+
+db.students.deleteMany({age : 99})
+
+
+ aggeregate  function 
+
+db.students.insertMany([
+  { name: "dolu", age: 5, fulltime: false, grade: "LKG", marks: 72, city: "Chennai" },
+  { name: "bolu", age: 5, fulltime: true, grade: "LKG", marks: 85, city: "Chennai" },
+  { name: "jakku", age: 7, fulltime: false, grade: "UKG", marks: 68, city: "Coimbatore" },
+  { name: "meena", age: 6, fulltime: true, grade: "UKG", marks: 91, city: "Madurai" },
+  { name: "raju", age: 8, fulltime: true, grade: "1st", marks: 77, city: "Salem" },
+  { name: "latha", age: 7, fulltime: false, grade: "1st", marks: 82, city: "Trichy" },
+  { name: "kumar", age: 6, fulltime: true, grade: "UKG", marks: 66, city: "Coimbatore" },
+  { name: "priya", age: 8, fulltime: false, grade: "2nd", marks: 95, city: "Madurai" },
+  { name: "mani", age: 9, fulltime: true, grade: "3rd", marks: 59, city: "Chennai" },
+  { name: "rekha", age: 9, fulltime: false, grade: "3rd", marks: 87, city: "Salem" },
+  { name: "babu", age: 10, fulltime: true, grade: "4th", marks: 73, city: "Trichy" },
+  { name: "divya", age: 10, fulltime: false, grade: "4th", marks: 89, city: "Coimbatore" },
+  { name: "suresh", age: 11, fulltime: true, grade: "5th", marks: 64, city: "Madurai" },
+  { name: "anitha", age: 11, fulltime: false, grade: "5th", marks: 78, city: "Chennai" }
+]);
+
+
+
+
+
+not equal :
+
+db.student.find({name : {$ne : "dolu" }})
+
+
+
+
+min max aveg count sum 
+
+
+ comparition 
+lt gt
+
+logical operator 
+ in nin 
+and or no
+
+
+
+
+
+
+
+
+

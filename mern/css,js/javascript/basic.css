@@ -1,0 +1,58 @@
+/* external css  */
+#vino{
+        color: purple ;
+        font-size: larger;
+        font-style: italic;
+        border:  5px solid black;
+        height: 100px;
+        width: 200px;
+
+        /* units */
+
+         /* height: 10vh;
+        width: 20vw; */
+        /* height: 5em;
+        width: 5em; */
+        /* height: 5%;
+        width: 5%; */
+    }
+
+
+    /* selector  propertise  */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+p{
+color: chocolate;
+}
+
+#text{
+    color: aquamarine;
+}
+
+.class{
+    color: blue;
+}
+
+
+/* text propertise  */
+
+#text{
+    color: black;
+  text-align: justify;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px  red;
+}
+
+.class{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic; 
+}
+
+
+

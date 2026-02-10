@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- traversel in access the parent and child and sbilings  -->
+
+    
+   <div class="pair">
+    <p class="chil">children node </p>
+     <p> children node 1</p>
+     <p> children node 2</p>
+     <p> children node 3</p>
+    
+   </div>
+
+    <script>
+        let chil=document.querySelector(".chil") // find a parent node 
+        console.log(chil.parentNode) 
+        
+         let pairr=document.querySelector(".pair")
+         console.log(pairr.firstElementChild)
+         console.log(pairr.lastElementChild)
+         console.log(pairr.childNodes)
+
+         let first=document.querySelector(".chil")
+         console.log(first.nextElementSibling)
+         console.log(first.previousElementSibling)
+
+    </script>
+   
+
+
+</body>
+
+</html>

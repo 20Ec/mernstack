@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <script>
+       function functioname(){
+        console.log("basic funcion")
+       }
+    functioname();
+
+     function functionwithparameter(a){
+       return a;
+       }
+    functionwithparameter("rajadurai")
+
+
+    function functionwithparameterr(a,b){
+        // console.log(a*b)
+         return a*b;
+       }
+    functionwithparameterr(5,5)
+
+    function functionwithparameters(l,h){
+        console.log(l*h)
+       }
+       let a=5;
+       let b=5;
+    functionwithparameters(a,b)
+
+        function fwp(l,h){
+            let c=l*h;
+           console.log(c)
+           }
+       let ll=5;
+       let hh=5;
+    fwp(ll,hh)
+    // console.log(c) //  error scope cant acess without declare gobal variable
+
+    let newfunction = function(){
+        console.log("hello worllllllll")
+    }
+    newfunction()
+    
+    let add =()=>{
+        console.log("arrowfunction1")
+    }
+    console.log(add())
+
+
+    // call back function 
+
+    function operation(operations,a,b){
+          
+          console.log(operations(a,b))
+    }
+     let adition = (a,b) => a+b;
+     let asbtraction = (a,b) => a+b;
+   
+     let dummy = adition(1,1)
+     console.log(dummy)
+
+     operation(adition,1,1);
+     
+
+   
+     </script>
+</body>
+</html>  

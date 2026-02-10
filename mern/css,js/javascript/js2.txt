@@ -1,0 +1,38 @@
+let you can change value in any place maximum use in inside the block 
+const can not change the value  , cannot redeclare the value 
+
+var  allow redeclare the the value can change the value 
+
+let,const block scoping 
+var global nut can reassign the value in block 
+
+ 
+
+
+ const a=10;
+    function b(){
+        const a=20; // throw error 
+        console.log(a)
+    }
+    b()
+      console.log(a)
+
+
+  var s=10;
+    function a(){ 
+        var s=20;
+        console.log(s)
+    }
+
+    a();
+
+   // 20 ,20
+
+
+ let e=10;
+    function d(){  
+        let e=30;
+        console.log(e)
+    }
+    d()
+      console.log(e)

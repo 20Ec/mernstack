@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let a=["arrays", 5 ,true, {name:"raja",age : 22}, function on() {return "hello"}]
+    console.log(a)
+    console.log(a[0])
+    //updatee 
+       a[3]=77
+
+       delete a[1]
+
+ // read 
+    for(t in a){
+        console.log( t+" "+a[t])
+    }
+
+a.push('beans');// add last elemet
+a.unshift('pumkin');// add in frist elemt 
+a.shift(); // remove the first
+a.pop(); // remove  last element 
+console.log(a)
+
+    </script>
+</body>
+</html>
+
+
+ db.students.insertOne({name : "bheem ",age : 5, goodBoy : true,date : new Date(), degree : null , skills :  ["laddu eating ","fight","speak "], adress : { doorno  : 7 , st : "kovil st",city : erode , pincode : 12345} })

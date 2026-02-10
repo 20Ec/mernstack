@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map&set</title>
+</head>
+<body>
+
+    <h1> map & set </h1>
+
+
+<script>
+    arr=[1,1,2,,3,4,5,5,6,6,6,6]
+//   not allow duplicate
+    let myset0 = new Set(arr);
+    let myset1 = new Set();
+    myset.add(4)
+    myset.add("set")
+    myset.add(true)
+    console.log(myset1.size)
+    console.log(myset1.has(5))
+    console.log(myset1.delete(3))
+    console.log(myset1.has(5))
+  
+//   covert set into map 
+
+let  arr2=Array.from(myset1)
+console.log(arr2)
+
+// map key and value 
+
+let map = new Map()
+map.set('a',1)
+map.set('boolian',true)
+map.set('a',1)
+console.log(map.has('c'))
+
+for (let i of map){
+    console.log(i)
+}
+   
+for(let [k,v] of  map){
+    console.log(k + v)
+
+}
+
+</script>
+    
+</body>
+</html>

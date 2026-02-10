@@ -1,0 +1,47 @@
+
+
+A scripting language is a type of programming language designed to automate tasks, often within a specific environment like a web browser, operating system, or software application.
+
+ Unlike compiled languages (like C or Java), scripting languages are typically interpreted line-by-line, making them faster to write, test, and modify
+
+ example - php , python , java script 
+
+
+- What Is ECMAScript?
+ECMAScript is the standardized scripting language specification defined by ECMA-262, maintained by Ecma International. It serves as the core language behind JavaScript, ActionScript, and other implementations.
+
+
+Think of ECMAScript as the blueprint—it defines the syntax, types, statements, keywords, operators, and built-in objects like Array, Object, Function, etc.
+
+
+- javascript 
+
+JavaScript is a high-level, interpreted programming language that powers the interactive behavior of websites and web apps. It’s the engine behind dynamic content, user interactions, and real-time updates in the browser.
+
+
+Originally developed by Brendan Erich in 1995, JavaScript has evolved from a simple scripting tool into a full-fledged ecosystem used for both client-side and server-side development
+
+ run time environment  for java script in browser 
+
+ Node.js is a powerful, open-source runtime environment that lets you run JavaScript outside the browser, primarily on servers. It’s built on Google’s V8 engine, which compiles JavaScript into fast machine code. ==== run time environment 
+
+  Run time environment  for  webpage google, chrome , firebox 
+
+ -webpage console tab explain   = element console network source 
+
+
+ first code 
+============
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+</body>
+</html> 

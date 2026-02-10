@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+     <style>
+  body{
+        background-image: radial-gradient( blue , yellow , green);
+        background-image: linear-gradient(  red , blueviolet ,green);
+        background-image: url('image.jpg');
+        background-repeat:  no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+         width: 100vw;
+         height: 100vh;
+       
+    margin: 1px;
+    padding: 10px;
+    /* background-color: aqua; */
+  }
+ #page1{
+    width: 1000px;
+    height: auto;
+    background-color: blue;
+ }
+  #page2{
+    width: 1000px;
+    height: auto;
+    background-color: blueviolet;
+ }
+  #page3{
+    width: 1000px;
+    height: auto;
+    background-color: chartreuse;
+ }
+  
+
+   /* @media all and (min-width:768px){
+    #media{
+        display: flex;
+        gap: 10px;
+        /* flex-direction: column; */
+    
+
+  /* @media screen and (min-width:330px){
+      #page1{
+    width: 420px;
+    height: auto;
+    background-color: blue;
+ }
+  #page2{
+    width: 420px;
+    height: auto;
+    background-color: blueviolet;
+ }
+  #page3{
+    width: 420px;
+    height: auto;
+    background-color: chartreuse;
+ }
+ #media{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+     gap: 30px;
+
+ }
+  } */
+
+
+   
+   @media screen and (max-width:800px){
+    
+    #media{ 
+        display: flex;
+        /* float: left;
+        clear: left; */  
+    }
+   }
+
+ </style>
+</head>
+
+
+
+<body>
+    <div id="media">
+
+        <div id="page1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim id harum dolorem facere voluptatem
+                expedita inventore labore alias repellendus velit, non quis a repudiandae vero minus officia et. Quasi,
+                tempore?</p>
+        </div>
+
+         <div id="page2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim id harum dolorem facere voluptatem
+                expedita inventore labore alias repellendus velit, non quis a repudiandae vero minus officia et. Quasi,
+                tempore?</p>
+        </div> 
+
+        <div id="page3">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim id harum dolorem facere voluptatem
+                expedita inventore labore alias repellendus velit, non quis a repudiandae vero minus officia et. Quasi,
+                tempore?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

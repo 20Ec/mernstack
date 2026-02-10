@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+</head>
+<body>
+  <ul id="menu">
+    <li>home</li>
+    <li>contact</li>
+    <li style="display: none;" >location</li>
+  </ul>
+
+
+    <script>
+      
+         let div = document.createElement("div");
+        //  div.innerText=<p> create a new element </p>; // total p tag include the p tag
+         div.innerHTML="<p> create a new element </p>"; // inside the p tag
+         div.id="title";
+         div.className="clasname"
+         document.body.appendChild(div) 
+         
+         
+
+            let men = document.getElementById("menu");
+            console.log(men.innerText) // visible text only 
+            // console.log(men.textContent) 
+
+            // menu.textContent="hello"; // replace all 
+            // men.innerText="<h1> hello</h1>"  // visible include the tsag
+            // men.innerHTML="<h2> hello</h2>"  // visible only on data
+
+            let lis = document.createElement("li")
+            lis.innerHTML="contact";
+            men.appendChild(lis);
+            // men.removeChild(men.lastElementChild)
+            //  men.removeChild(men.firstElementChild)
+            
+            console.log(lis);
+
+
+            let cr = document.createElement("h1")
+            cr.innerHTML="create a new one"
+
+            let cre = document.createElement("h2")
+            cre.innerHTML="create a new one"
+            let str1="create a string"
+ 
+            //element.after(node)
+            // append after node
+
+            menu.after(str1,cr,cre) // can add multipe using , comma 
+            
+          //parentnode.append(newnode) // multipe node and allow string
+         //parentnode.prepenf(newnode)
+         
+
+
+
+
+ 
+    </script>
+</body>
+</html>

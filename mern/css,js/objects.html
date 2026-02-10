@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p id="demo">hello world</p>
+  <p id="dem"></p>
+
+
+  <input id="valuee"  type="text">
+
+  <button type="submit" onclick="c()" >clicked</button>
+
+  <p id="click"> </p>
+  <p id="tc"></p>
+  
+
+  <script>
+    // alert("welcome");
+    function c(){
+
+     let b =Number(document.getElementById("valuee").value);
+     let a = document.getElementById("click");
+         a.innerHTML = b+4;
+
+    }
+     let tc=document.getElementById("tc");
+     tc.textContent="text content"
+    
+    //  a.innerHTML="message"
+  </script>
+
+
+<!-- // d.gei("input") // input box 
+// d.gei("input").value //'10'
+
+// let value =number (d.gei("input").value )
+// let result =dei("result ") -->
+
+    </script>
+    
+<!-- <script> 
+ let X={}; // object varibale varable name = {} object 
+ console.log(typeof(X));
+ let x="sri";
+  console.log(typeof(x));
+  let num=5;
+   console.log(typeof(num));
+
+let id = {
+    name1 : "raja",  // key and value 
+    college : "muthayammal",
+    cgpe : 7.6,
+    location : "namakkal",
+    location1 : "namakkal",
+    company (){
+        return yes;
+
+    }
+  
+//   'id'[caller] = "dayscaller";
+
+
+
+//  name : "curd.ev " ,  // key and value 
+// brand :"tata" ,
+// driventrain : 'petrol' ,'disel', 'ev' ,
+// price : 15
+
+}  
+ for (ym in id)
+ console.log(ym)  // print only key 
+
+  for (ym in id)
+ console.log(ym + ":" +id[ym]) //  print key :  value 
+
+console.log(id.name1); // calling key  getting key
+ console.log(id.company)
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////  
+ let name2="sree varshan"
+
+let raja={
+    name :  "mynameis: "+'name2', // pass variablr in single qoutes dont do double qoutes
+    name3 : name2 // can call directly
+}
+
+console.log(raja.name)
+
+let rajadurai= {
+    "frist name" : "raja",
+
+}
+console.log(rajadurai["frist name"]) // call  varible name ["variable name"]
+
+ console.log("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+
+
+let idd = {
+  name1: "raja",           // key and value
+  college: "muthayammal",
+  cgpe: 7.6,               // typo was 'cgpa' in delete
+  location: "namakkal",
+  location1: "namakkal",
+      company(n) {
+    return n*2;          // 'yes' must be a string or variable
+  },
+  driventrain : ['petrol' ,'disel']
+};
+
+let array =[ onclick="()" , newobejct={name : raja} , 5 , true , null , undefined]
+ 
+// Now perform operations outside the object declaration
+idd.name1 = "changed";        // update value
+idd.Any = "new updated";      // add new key
+idd["caller"] = "dayscaller"; // add dynamic key
+delete idd.cgpe;              // delete key
+
+console.log(id);
+
+for(ym in idd)
+console.log(ym +":"+idd[ym]);
+
+</script> -->
+
+
+<!-- <script>
+ let arrays=[];
+ console.log(typeof(arrays))
+
+ let array =['carrot','root']
+ console.log(typeof(array))
+
+ console.log(array[0])
+ console.log(array[1])
+ let arr=[5 , 'call', true,undefined,function add(a,b) {return(a+b)},{name:"raja",age:22}]
+ console.log(arr)
+arr.push('beans');// add last elemet
+arr.unshift('pumkin');// add in frist elemt 
+arr.shift(); // remove the first
+arr.pop(); // remove the end 
+// delete arr[1] // delete 
+arr[3]=77
+
+ console.log(arr)
+
+
+ for(dummy in arr)
+  console.log(dummy+":"+arr[dummy])
+
+ for(let i=0;i<=arr.length;i++){
+    console.log(arr[i])
+ }
+
+</script> -->
+</body>
+</html>
