@@ -1,0 +1,26 @@
+git install 
+
+cmd:
+git -v
+git init
+where git
+set path variable 
+
+vs code
+git init 
+git add .
+git config --global user.name "Raja"
+git config --global user.email "rajadurai3112003@gmail.com" 
+git config --global --list
+
+git status 
+
+
+git status
+git add .
+git commit -m "add new file"
+git push
+
+.gitignore
+mention file name
+
