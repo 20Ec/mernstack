@@ -1,34 +1,35 @@
 import express from "express";
-import mongoose from "mongoose";
-import cors from "cors";
-import dotenv from "dotenv";
-import todoRoutes from "./routes/todoRoutes.js";
+import Todo from "../models/Todo.js";
 
-dotenv.config();
+const router = express.Router();
 
-const app = express();
-
-// middleware
-app.use(cors());
-app.use(express.json());
-
-// routes
-app.get("/", (req, res) => {
-  res.send("Todo API is running");
+// GET all todos
+router.get("/", async (req, res) => {
+  const todos = await Todo.find();
+  res.json(todos);
 });
 
-app.use("/api/todos", todoRoutes);
+// POST create todo
+router.post("/", async (req, res) => {
+  const todo = new Todo({ text: req.body.text });
+  const savedTodo = await todo.save();
+  res.status(201).json(savedTodo);
+});
 
-// database connection
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log("MongoDB Connected");
+// PUT update todo
+router.put("/:id", async (req, res) => {
+  const updated = await Todo.findByIdAndUpdate(
+    req.params.id,
+    { text: req.body.text },
+    { new: true }
+  );
+  res.json(updated);
+});
 
-    app.listen(process.env.PORT, () => {
-      console.log(`Server running on port ${process.env.PORT}`);
-    });
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
+// DELETE todo
+router.delete("/:id", async (req, res) => {
+  await Todo.findByIdAndDelete(req.params.id);
+  res.json({ message: "Todo deleted" });
+});
+
+export default router;
